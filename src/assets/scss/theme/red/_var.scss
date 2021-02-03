@@ -1,0 +1,23 @@
+:root{
+    --bgColor:red;//背景色
+    --fontColor:red;//文字颜色
+    --borderColor:#e5e5e5;//文字颜色
+    --fontSize:16px;//文字大小
+  }
+  
+$red: #db3d3c;
+$gray-deep: #999;
+$gray: #bfbfbf;
+$gray-shallow: #e5e5e5;
+$gray-shallow-more: #fff;
+
+$icon-bg: #f9f3e8;
+
+//字体变量
+$font-color-gray: $gray-deep;
+$font-size-small: 12px;
+$font-size-normal: 14px;
+$font-size-big: 16px;
+
+$border-color: $gray-shallow;
+$bg-color: $gray-shallow-more;
