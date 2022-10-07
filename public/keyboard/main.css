@@ -1,0 +1,245 @@
+/*
+ * Copyright (c) 2018.  CFCA  [http://www.cfca.com.cn] All rights reserved.
+ * FileName:main.css
+ * Description:demo style
+ * author:suzilong
+ */
+
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+.div-relative {
+    position: relative;
+    width: 100%;
+}
+
+.child {
+    top: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: 70;
+}
+
+.title {
+    background-color: #000000;
+    color: #ffffff;
+    height: 30px;
+    text-align: center;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.attr {
+    color: #727272;
+}
+
+.icon {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.titleMargin {
+    text-align: center;
+}
+
+.checkBox {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #466ACF;
+    width: 30px;
+    height: 30px;
+}
+
+.alightRight {
+    float: right;
+}
+
+.attrTitle {
+    color: #AAAAAA;
+    margin-right: 10px;
+}
+
+.radio {
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.radio-disorder {
+    text-align: left;
+    float: left;
+    margin-top: 10px;
+    width: 33%;
+}
+
+.input {
+    width: 45%;
+}
+
+.div-layout {
+    margin-top: 10px;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.button-version {
+    color: #FFFFFF;
+    height: 40px;
+    background-color: #466ACF;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+}
+
+.button-set {
+    color: #FFFFFF;
+    height: 40px;
+    border: none;
+    margin-top: 20px;
+    background-color: #466ACF;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.sip {
+    width: 95%;
+    height: 40px;
+    font-size: medium;
+}
+
+.button-check {
+    color: #FFFFFF;
+    height: 40px;
+    border: none;
+    background-color: #466ACF;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.sipbox-layout {
+    background-color: #F0F1F3;
+}
+
+.sipbox-set {
+    background-color: #FFFFFF;
+    flex-direction: column;
+    padding: 15px 15px 15px 15px;
+}
+
+.sipbox-sip {
+    position: relative;
+    -webkit-flex-direction:column;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    padding: 15px 15px 15px 15px;
+}
+
+.sipbox-grid {
+    background-color: #FFFFFF;
+    padding: 15px 15px 15px 15px;
+}
+
+.grid-sip {
+    top: 0;
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    position: absolute;
+    z-index: 71;
+    /*display: grid;*/ /*Android5.0以上支持*/
+    /*background-color: #ffff00;*/
+    /*color: #444;*/
+    /*grid-template-rows: repeat(1, 1fr);*/
+    /*grid-template-columns: repeat(6, 1fr);*/
+}
+
+.box {
+    flex-direction: row;
+    border: 1px solid;
+    border-left-width: 0px;
+    padding-left: 0;
+    color: #000000;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.a {
+    border-left: 1px solid;
+}
+
+.sip3 {
+    padding-top: 10px;
+}
+
+.button-property {
+    float: right;
+    border: none;
+    background: none;
+    color: #466ACF;
+    size: 20px;
+}
+
+.button-clear {
+    float: right;
+    border: none;
+    background: none;
+    color: #AAAAAA;
+    size: 20px;
+}
+
+.sipBoxName {
+    color: #727272;
+}
+
+.line {
+    height: 1px;
+    border: none;
+    border-top: 1px solid #ECECEC;
+}
+
+.input {
+    height: 40px;
+}
+
+.publicProperties {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+input[type="text"] {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.cursor {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 3px;
+    width: 2px;
+    height: 32px;
+    background: blue;
+    display: none;
+    z-index: 1000;
+}
+
+#box {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}

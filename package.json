@@ -1,0 +1,56 @@
+{
+  "name": "project-mobile-seed",
+  "version": "1.0.10",
+  "description": "A vue project with vant ,use vant UI & axios & vuex & vue-router",
+  "author": "penghc <penghaochen610@qq.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build  --mode production",
+    "build:stage": "vue-cli-service build --mode deployment",
+    "build:prod": "vue-cli-service build --mode production",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@chenfengyuan/vue-countdown": "^1.1.5",
+    "amfe-flexible": "^2.2.1",
+    "axios": ">=0.18.1",
+    "asmcrypto.js": "^2.3.2",
+    "crypto-js": "^4.0.0",
+    "js-cookie": "2.2.0",
+    "jsencrypt": "^3.0.0-rc.1",
+    "sm-crypto": "^0.2.1",
+    "swiper": "^5.3.7",
+    "vant": "^2.6.1",
+    "vue": "^2.5.17",
+    "vue-awesome-swiper": "^4.1.0",
+    "vue-i18n": "^8.17.3",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.1.3",
+    "weixin-js-sdk": "^1.4.0-test"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-plugin-eslint": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "@vue/eslint-config-prettier": "^3.0.5",
+    "babel-plugin-import": "^1.9.1",
+    "less-loader": "^6.0.0",
+    "mockjs": "1.0.1-beta3",
+    "node-sass": "^4.9.3",
+    "postcss-pxtorem": "^5.1.1",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "Android >= 4.0",
+    "iOS >= 7"
+  ]
+}

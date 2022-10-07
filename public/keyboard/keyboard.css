@@ -1,0 +1,212 @@
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+/*
+ * 需要界面响应点击事件，解决和一些第三方框架如ionic冲突的问题
+ */
+body, html {
+    pointer-events: auto !important;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+.cfca-keyboard {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    background: #FCFEFD;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    z-index: 99999;
+    padding-bottom: constant(safe-area-inset-bottom );
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+.cfca-keyboard img {
+    pointer-events: none;
+}
+
+.logo-border {
+    border-top: 1px solid #D7D9E3;
+}
+
+.cfca-row {
+    width: 100%;
+    clear: both;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.cfca-row .col {
+    padding: 0;
+    display: block;
+    float: left;
+    line-height: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.cfca-btn {
+    width: 100%;
+    color: #38415D;
+    padding: 0;
+    border: 1px solid #9EA7C1;
+    box-shadow: 0px 1px 0px 0px;
+    border-radius: 4px;
+    display: inline-block;
+    font-family: sans-serif, Arial, Microsoft YaHei;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    cursor: pointer;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.cfca-default {
+    background-color: #FCFDFC;
+    background-image: -webkit-linear-gradient(top, #FCFDFC 0%, #F1F4F6 100%);
+    background-image: -moz-linear-gradient(top, #FCFDFC 0%, #F1F4F6 100%);
+}
+
+.cfca-finish {
+    color: #FFFFFF;
+    background-color: #466ACF;
+    background-image: -webkit-linear-gradient(top, #466ACF 0%, #4463BB 100%);
+    background-image: -moz-linear-gradient(top, #466ACF 0%, #4463BB 100%);
+}
+
+.cfca-click {
+    background-color: #E0E2EB;
+    background-image: -webkit-linear-gradient(top, #E0E2EB 0%, #CCCFDA 100%);
+    background-image: -moz-linear-gradient(top, #E0E2EB 0%, #CCCFDA 100%);
+}
+
+.cfca-mod {
+    background-color: #E0E2EB;
+    background-image: -webkit-linear-gradient(top, #E0E2EB 0%, #CCCFDA 100%);
+    background-image: -moz-linear-gradient(top, #E0E2EB 0%, #CCCFDA 100%);
+}
+
+.cfca-mod-click {
+    color: #38415D;
+    background-color: #FCFDFC;
+    background-image: -webkit-linear-gradient(top, #FCFDFC 0%, #F1F4F6 100%);
+    background-image: -moz-linear-gradient(top, #FCFDFC 0%, #F1F4F6 100%);
+}
+
+.cfca-num-default {
+    background-color: #FCFEFD;
+    background-image: -webkit-linear-gradient(top, #FCFEFD 0%, #FCFEFD 100%);
+    background-image: -moz-linear-gradient(top, #FCFEFD 0%, #FCFEFD 100%);
+}
+
+.cfca-num-click {
+    background-color: #D7D9E3;
+    background-image: -webkit-linear-gradient(top, #D7D9E3 0%, #D7D9E3 100%);
+    background-image: -moz-linear-gradient(top, #D7D9E3 0%, #D7D9E3 100%);
+}
+
+.cfca-num-mod-default {
+    background-color: #D7D9E3;
+    background-image: -webkit-linear-gradient(top, #D7D9E3 0%, #D7D9E3 100%);
+    background-image: -moz-linear-gradient(top, #D7D9E3 0%, #D7D9E3 100%);
+
+}
+
+.cfca-num-mod-click {
+    background-color: #FCFEFD;
+    background-image: -webkit-linear-gradient(top, #FCFEFD 0%, #FCFEFD 100%);
+    background-image: -moz-linear-gradient(top, #FCFEFD 0%, #FCFEFD 100%);
+}
+
+.cfca-bubble-text {
+    background-color: white;
+    -webkit-appearance: none;
+    border: 0px;
+    border-radius: 0px;
+}
+
+#CFCABubble {
+    box-sizing: content-box;
+    -moz-box-sizing: content-box; /* Firefox */
+    -webkit-box-sizing: content-box; /* Safari */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    display: none;
+}
